@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    font-family: "Azeret Mono";
+}
+
+body {
+    background: #222;
+}
+
+.game-header {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    background: rgb(255, 180, 40);
+    padding: 32px;
+    border-radius: 8px;
+}
+
+.game-start {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game-start__image-banner {
+    text-align: right;
+    margin: 32px 0;
+}
+
+.game-start__image-banner img {
+    border-radius: 8px;
+}
+
+.game-start__image-banner a {
+    text-decoration: none;
+    color: royalblue;
+    font-size: .75rem;
+}
+
+.game-start__section-header {
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(255, 180, 40);
+}
+
+.game-start__section-sub-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.game-start__players {
+
+}
+
+.game-start__player-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px;
+}
+
+.game-start__player-name label {
+    margin-bottom: 8px;
+    color: rgb(255, 180, 40);
+}
+
+.game-start__player-name input {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: black solid 3px;
+    outline: none;
+    background: none;
+    color: whitesmoke;
+}
+
+.game-start__player-name input:focus {
+    border: rgb(255, 180, 40) solid 3px;
+}
+
+.game-start__btn {
+    padding: 16px;
+    background: whitesmoke;
+    border-radius: 8px;
+    border: black solid 2px;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+}
+
+.game-start__btn:hover {
+    border: rgb(255, 180, 40) solid 3px;
+    background: black;
+    color: white;
+}
+
+.game-start__btn:focus {
+    outline: none;
+    border: rgb(255, 180, 40) solid 3px;
+    background: black;
+    color: white;
+}
+
+.game-status {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 16px;
+    margin-bottom: 32px;
+    background: black;
+    color: rgb(255, 180, 40);
+    border-left: rgb(255, 180, 40) solid 3px;
+    border-right: rgb(255, 180, 40) solid 3px;
+    display: none;
+}
+
+.game-status.game-status--end {
+    color: whitesmoke;
+    font-weight: 700;
+    border-left: whitesmoke solid 3px;
+    border-right: whitesmoke solid 3px;
+}
+
+.game-board {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: grid; */
+    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    display: none;
+}
+
+.game-board__cell {
+    aspect-ratio: 1 / 1;
+    border: rgb(255, 180, 40) solid 3px;
+    border-radius: 16px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 0px 4px 4px rgba(255, 180, 40, .25);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: 700;
+    color: rgb(255, 180, 40);
+}
+
+.game-controls {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    gap: 16px;
+    display: none;
+}
+
+.game-controls__btn {
+    margin: 32px 0;
+    flex: 1;
+    text-align: center;
+    border: whitesmoke solid 3px;
+    padding: 16px;
+    color: whitesmoke;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.game-controls__btn--start-menu:hover {
+    background: black;
+}
+
+.game-controls__btn--restart:hover {
+    background: rgb(255, 180, 40);
+}
